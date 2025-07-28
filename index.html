@@ -1,101 +1,86 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Company Hub</title>
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Byblos Vista Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
     body {
-
       margin: 0;
-
-      font-family: Arial, sans-serif;
-
-      background-image: url('nobgbg.png');
-
-      background-color: white;
-
-      background-size: 100px;
-
-      background-position: top;
-
-      background-repeat: no-repeat;
-
-      height: 100vh;
-
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f3f6fa;
       display: flex;
-
       align-items: center;
-
       justify-content: center;
-
+      min-height: 100vh;
     }
- 
+
     .container {
-
-      /*background-color: rgba(255, 255, 255, 0.9);*/
-
-      padding: 40px;
-
-      border-radius: 12px;
-
+      background: #ffffff;
+      padding: 50px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+      max-width: 450px;
+      width: 100%;
       text-align: center;
-
-      /*box-shadow: 0 0 15px rgba(0,0,0,0.2);*/
-
     }
- 
+
+    .logo {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+
     h1 {
-
+      font-size: 24px;
+      color: #1f2d3d;
       margin-bottom: 30px;
-
-      color: #333;
-
     }
- 
+
     .button {
-
       display: block;
-
-      width: 250px;
-
-      padding: 15px;
-
-      margin: 15px auto;
-
+      width: 100%;
+      padding: 14px 0;
+      margin: 12px 0;
       background-color: #0078D4;
-
       color: white;
-
-      border: none;
-
-      border-radius: 8px;
-
       font-size: 16px;
-
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
       cursor: pointer;
-
       text-decoration: none;
-
-      transition: background-color 0.3s ease;
-
+      transition: all 0.3s ease;
     }
- 
+
     .button:hover {
-
-      background-color: #005A9E;
-
+      background-color: #005a9e;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 120, 212, 0.3);
     }
-</style>
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-<h1>Welcome to Byblos Vista Hub</h1>
-<a href="https://byblosvista.sharepoint.com/sites/VivalaVista/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FVivalaVista%2FShared%20Documents%2F2025%20Album&viewid=f4cad8a2%2D5924%2D4d2f%2D8ea1%2Db956b7bf1e66" target="_blank" class="button">📘 Go to Our Photos</a>
-<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=u8StVzVr8U-QNkMGrv9WPtB_fRtDeVZNhKDPI_hUn2lUOEVUSTc2QUcwQUVRN0tBSTkzSDM5RVZBTi4u" target="_blank" class="button">📝 Submit a Ticket</a>
-</div>
+  <div class="container">
+    <img src="e4f57665-d827-404e-a6b1-a250b685f58c.png" alt="Byblos Vista Logo" class="logo" />
+    <h1>Welcome to Byblos Vista Hub</h1>
+    <a href="https://byblosvista.sharepoint.com/sites/VivalaVista/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FVivalaVista%2FShared%20Documents%2F2025%20Album&viewid=f4cad8a2%2D5924%2D4d2f%2D8ea1%2Db956b7bf1e66" target="_blank" class="button">📸 View Our Photos</a>
+    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=u8StVzVr8U-QNkMGrv9WPtB_fRtDeVZNhKDPI_hUn2lUOEVUSTc2QUcwQUVRN0tBSTkzSDM5RVZBTi4u" target="_blank" class="button">🛠️ Submit a Ticket</a>
+  </div>
 </body>
 </html>
- 
